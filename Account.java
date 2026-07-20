@@ -1,4 +1,4 @@
-public class Account{   //domain object
+public class Account{   //called domain object
     private double balance;
 
     public Account(double balance){

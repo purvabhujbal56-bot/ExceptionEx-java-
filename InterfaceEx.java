@@ -1,4 +1,5 @@
-interface Hello  {
+@FunctionalInterface
+interface Hello  {  //functional interface
     void greet();
 }
 

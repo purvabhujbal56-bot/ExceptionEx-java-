@@ -1,5 +1,5 @@
 public class Demo {
-    private Object data;
+    private Object data;        //object class data remain generic
     public Demo(Object data){
         this.data = data;
     }

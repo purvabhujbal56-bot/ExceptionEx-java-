@@ -1,5 +1,5 @@
 //example of comparator
-public class Person {
+public class Person implements Comparable<Person>{
     private String name;
     private int age;
 
@@ -16,5 +16,9 @@ public class Person {
     }
     public int getAge(){       //// Getter for age
         return age;
+    }
+    @Override
+    public int compareTo(Person p){
+        return this.age - p.age;
     }
 }

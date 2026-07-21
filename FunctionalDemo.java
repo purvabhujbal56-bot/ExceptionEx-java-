@@ -14,15 +14,13 @@ public class FunctionalDemo {
         Supplier<Double> random =() -> Math.random();
         System.out.println(random.get());
 
-        Consumer<String> c = (s) -> System.out.println(s);
+        Consumer<String> c = (s) -> System.out.println(s); //consumer passing value to another consumer
         c.accept("Adios");
 
-        Consumer<String> c1 = System.out::println;   //consumer
+        Consumer<String> c1 = System.out::println;      //:: - method referrence
         c1.accept("hello");
-        c1.accept("hola");
-        c1.accept("Bonjour");
-
-        Consumer<String> c2 = System.out::println;
+        
+        Consumer<String> c2 = FunctionalDemo::print;
         c2.accept("aloha");
         
         Predicate<Integer> nonNegative = (x) -> x >= 0;
@@ -32,7 +30,7 @@ public class FunctionalDemo {
         Predicate<Integer> isEven = (x) -> x % 2 == 0;           //predicate
         System.out.println(isEven.test(5));
 
-        BiPredicate<String , String> contains = (str,con) -> str.contains(con);  //bifunctional
+        BiPredicate<String , String> contains = (str,con) -> str.contains(con);  //bipredicate
         System.out.println(contains.test("mumbai", "u"));
 
         Function<Integer,Integer> square = (x) -> x*x ;

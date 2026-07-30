@@ -11,6 +11,7 @@ public class SortedPerson {
         people.add(new Person("polo", 21));  //another file person
         people.add(new Person("Mili", 44));
         people.add(new Person("leo", 34));
+        people.add(new Person("Ved", 24));
 
         for(Person p : people)
            // System.out.println(p);

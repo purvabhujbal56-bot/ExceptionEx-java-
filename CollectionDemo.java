@@ -36,13 +36,13 @@ public class CollectionDemo {
         for(String e: ar)
             System.out.println(e);
 
-        HashSet<String> set = new HashSet<String>(ar);        //to covert arraylist into set
+        HashSet<String> set = new HashSet<String>(ar); //to covert arraylist into set
         System.out.println("--traversing over set collection");
         for (String e : set) {
             System.out.println(e);
         }
 
-        TreeSet<String> tree = new TreeSet<String>(set);        //to sort 
+        TreeSet<String> tree = new TreeSet<String>(set);   //to sort 
         System.out.println("--traversing over set collection");
         for (String e : tree) {
             System.out.println(e);

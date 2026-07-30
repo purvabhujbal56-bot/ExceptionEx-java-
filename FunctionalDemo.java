@@ -27,16 +27,18 @@ public class FunctionalDemo {
         System.out.println(nonNegative.test(3));
         System.out.println(nonNegative.test(-2));
 
-        Predicate<Integer> isEven = (x) -> x % 2 == 0;           //predicate
+        Predicate<Integer> isEven = (x) -> x % 2 == 0; //predicate
         System.out.println(isEven.test(5));
 
-        BiPredicate<String , String> contains = (str,con) -> str.contains(con);  //bipredicate
+        BiPredicate<String , String> contains = 
+        (str,con) -> str.contains(con);  //bipredicate
         System.out.println(contains.test("mumbai", "u"));
 
         Function<Integer,Integer> square = (x) -> x*x ;
         System.out.println(square.apply(5));
 
-        BiFunction<Integer,Integer,Integer> greater = (a,b) -> a>b? a:b;
+        BiFunction<Integer,Integer,Integer> greater = 
+        (a,b) -> a>b? a:b;
         System.out.println(greater.apply(10, 20));
     }
 }

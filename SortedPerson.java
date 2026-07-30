@@ -13,6 +13,7 @@ public class SortedPerson {
         people.add(new Person("leo", 34));
 
         for(Person p : people)
+           // System.out.println(p);
             System.out.println(p);
     }
 }

@@ -1,6 +1,6 @@
 @FunctionalInterface
 interface Hello  {  //functional interface
-    void greet();
+    void greet(); 
 }
 
 public class InterfaceEx {   //class inside class

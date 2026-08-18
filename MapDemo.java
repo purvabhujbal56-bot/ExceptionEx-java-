@@ -24,8 +24,10 @@ public class MapDemo {
 
         map.forEach((key, value) -> {                //java version 8
             System.out.println(key + " : " + value);
+            //System.out.println(key + " : " + value);
+            //System.out.println(key + " : " + value);
             });
-           // });
+        
         }
  
     }

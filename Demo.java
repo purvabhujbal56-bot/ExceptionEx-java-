@@ -20,6 +20,7 @@ public class Demo<T> {
 
         Demo<Integer> d1 = new Demo<Integer>(99);
         Demo<String> d2 = new Demo<String>("aloha");
+       // Demo<String> d2 = new Demo<String>("aloha");
 
         System.out.println(d1.getData());
         System.out.println(d2.getData());

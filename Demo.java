@@ -16,6 +16,7 @@ public class Demo<T> {
         System.out.println(d1.getData());
         Demo d2 = new Demo("hola");
         System.out.println(d2.getData());*/
+        //System.out.println(d2.getData());
 
         Demo<Integer> d1 = new Demo<Integer>(99);
         Demo<String> d2 = new Demo<String>("aloha");

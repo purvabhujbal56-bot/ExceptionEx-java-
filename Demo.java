@@ -24,6 +24,9 @@ public class Demo<T> {
 
         System.out.println(d1.getData());
         System.out.println(d2.getData());
+        ////System.out.println(d2.getData());
+        //System.out.println(d2.getData());
+        //System.out.println(d2.getData());
 
     }
 }
